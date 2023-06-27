@@ -2,6 +2,7 @@ import React from 'react';
 import { Tween } from 'react-gsap';
 // reactstrap components
 import { Row, Col } from 'reactstrap';
+import Iswallet from 'components/IsWallet';
 
 import './index.scss';
 function HomeFooter() {
@@ -29,6 +30,7 @@ function HomeFooter() {
           />
         </Tween>
       </Col>
+      <Iswallet />
     </Row>
   );
 }
