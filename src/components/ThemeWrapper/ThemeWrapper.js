@@ -21,8 +21,6 @@ export default function ThemeContextWrapper(props) {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
-      {props.children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, changeTheme }}>{props.children}</ThemeContext.Provider>
   );
 }

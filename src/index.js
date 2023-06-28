@@ -42,11 +42,11 @@ root.render(
     <BackgroundColorWrapper>
       <BrowserRouter>
         <Switch>
-          <Route path="/home" render={() => <HomePage />} />
-          <Route path="/loginpage" render={() => <LoginPage />} />
-          <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-          <Route path="/login" render={() => <Login />} />
-          <Route path="/register" render={() => <Register />} />
+          <Route path="/home" component={HomePage} />
+          <Route path="/loginpage" component={LoginPage} />
+          <Route path="/admin" component={AdminLayout} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
           <Redirect from="*" to="/home" />
         </Switch>
       </BrowserRouter>
